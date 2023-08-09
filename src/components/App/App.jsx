@@ -1,11 +1,17 @@
+import AlbumList from "../AlbumList/AlbumList";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import './app.scss';
 
 
 const App = () => {
 
 
     return (
-        <div>
-            Hayat
+        <div id="app">
+            <Header />
+            <AlbumList />
+            <Footer />
         </div>
     );
 };
