@@ -1,7 +1,7 @@
+import { useNavigate } from 'react-router-dom';
 import './albumcard.scss';
-import { useState } from 'react';
 
-const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink }) => {
+const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink, slug }) => {
 
     const handleHover = () => {
         document.body.style.backgroundColor = coverColor;
@@ -11,14 +11,14 @@ const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink }
         document.body.style.backgroundColor = '#f0f0f0';
     };
 
-    const [isActive, setIsActive] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <div className='album-player-container'>
             <div
+                onClick={() => navigate(`/player/${slug}`)}
                 onMouseEnter={handleHover}
                 onMouseLeave={handleHoverOut}
-                onClick={() => window.open(link)}
                 className="album-card"
             >
                 <div className='album-card__header'>
@@ -34,10 +34,15 @@ const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink }
                     src={cover}
                 />
             </div>
-            {/* TODO: Le player se reveal au hover sur la card */}
-            <div className='spotify-player'>
-                <iframe style={{ borderRadius: '12px' }} src={spotifyEmbeedLink} width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+            {/* <iframe
+                className='spotify-player'
+                src={spotifyEmbeedLink}
+                width="100%" height="352"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+            /> */}
         </div>
     );
 };

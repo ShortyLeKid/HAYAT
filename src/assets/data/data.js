@@ -10,7 +10,8 @@ export default [
         cover: HYT001cover,
         coverColor: '#b091bb',
         link: 'https://open.spotify.com/intl-fr/album/5v46620AOqMMz4bBc4bxSW',
-        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/5v46620AOqMMz4bBc4bxSW?utm_source=generator'
+        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/5v46620AOqMMz4bBc4bxSW?utm_source=generator',
+        slug: 'she-was-shattered',
     },
     {
         artist: 'Yumara',
@@ -18,7 +19,8 @@ export default [
         cover: HYT002cover,
         coverColor: '#7a98a7',
         link: 'https://open.spotify.com/intl-fr/artist/0MKCwZqyfnbu8i83V8ntiW',
-        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/46rDwxMZULDgpH2xsWoy0j?utm_source=generator'
+        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/46rDwxMZULDgpH2xsWoy0j?utm_source=generator',
+        slug: 'her-mind-awakened',
     },
     {
         artist: 'Vixear',
@@ -27,5 +29,6 @@ export default [
         coverColor: '#dc9f7a',
         link: 'https://open.spotify.com/intl-fr/artist/0MKCwZqyfnbu8i83V8ntiW',
         spotifyEmbeedLink: 'https://open.spotify.com/embed/album/2s9Jk0d8WipDSlQ38qUcCN?utm_source=generator',
+        slug: 'got-hooked-on-poems',
     },
 ]
