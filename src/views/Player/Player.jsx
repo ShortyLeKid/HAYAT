@@ -6,6 +6,7 @@ const Player = () => {
 
     const { slug } = useParams();
     const found = albumDatas.find((element) => element.slug === slug);
+
     document.body.style.backgroundColor = '#f0f0f0';
 
     return (

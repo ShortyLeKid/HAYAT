@@ -1,7 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 import './albumcard.scss';
+import { useState } from 'react';
 
-const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink, slug }) => {
+const AlbumCard = ({
+    title,
+    artist,
+    cover,
+    coverColor,
+    link,
+    spotifyEmbeedLink,
+    slug,
+    isEnabled
+}) => {
 
     const handleHover = () => {
         document.body.style.backgroundColor = coverColor;
@@ -16,7 +26,7 @@ const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink, 
     return (
         <div className='album-player-container'>
             <div
-                onClick={() => navigate(`/player/${slug}`)}
+                onClick={isEnabled ? () => navigate(`/player/${slug}`) : null}
                 onMouseEnter={handleHover}
                 onMouseLeave={handleHoverOut}
                 className="album-card"
@@ -34,15 +44,6 @@ const AlbumCard = ({ title, artist, cover, coverColor, link, spotifyEmbeedLink, 
                     src={cover}
                 />
             </div>
-            {/* <iframe
-                className='spotify-player'
-                src={spotifyEmbeedLink}
-                width="100%" height="352"
-                frameBorder="0"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-            /> */}
         </div>
     );
 };

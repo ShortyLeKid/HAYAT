@@ -7,7 +7,17 @@ const AlbumList = () => {
 
     return (
         <div className="album-list">
-            {albumDatas.map(({ artist, title, cover, coverColor, link, spotifyEmbeedLink, slug }) => (
+            {albumDatas.map(({
+                artist,
+                title,
+                cover,
+                coverColor,
+                link,
+                spotifyEmbeedLink,
+                slug,
+                id,
+                isEnabled
+            }) => (
                 <AlbumCard
                     artist={artist}
                     title={title}
@@ -15,8 +25,9 @@ const AlbumList = () => {
                     coverColor={coverColor}
                     link={link}
                     // spotifyEmbeedLink={spotifyEmbeedLink}
-                    key={title}
+                    key={id}
                     slug={slug}
+                    isEnabled={isEnabled}
                 />
             ))}
         </div>

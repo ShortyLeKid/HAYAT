@@ -1,10 +1,11 @@
 import HYT001cover from '../HYT001_COVER.jpg';
-import HYT002cover from '../HYT002_COVER.jpg';
-import HYT003cover from '../HYT003_COVER.jpg';
+import HYT002cover from '../HYT002_COVER.png';
+import HYT003cover from '../HYT003_COVER.png';
 
 
 export default [
     {
+        id: 1,
         artist: 'Eihmdi',
         title: 'She Was Shattered',
         cover: HYT001cover,
@@ -12,23 +13,28 @@ export default [
         link: 'https://open.spotify.com/intl-fr/album/5v46620AOqMMz4bBc4bxSW',
         spotifyEmbeedLink: 'https://open.spotify.com/embed/album/5v46620AOqMMz4bBc4bxSW?utm_source=generator&theme=0',
         slug: 'she-was-shattered',
+        isEnabled: true,
     },
     {
-        artist: 'Yumara',
-        title: 'Her Mind Awakened',
+        id: 2,
+        artist: '***',
+        title: '*******',
         cover: HYT002cover,
-        coverColor: '#7a98a7',
-        link: 'https://open.spotify.com/intl-fr/artist/0MKCwZqyfnbu8i83V8ntiW',
-        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/46rDwxMZULDgpH2xsWoy0j?utm_source=generator',
-        slug: 'her-mind-awakened',
+        coverColor: '#8195a1',
+        link: '',
+        spotifyEmbeedLink: '',
+        slug: '',
+        isEnabled: false,
     },
     {
-        artist: 'Vixear',
-        title: 'Got Hooked On Poems',
+        id: 3,
+        artist: '***',
+        title: '*******',
         cover: HYT003cover,
-        coverColor: '#dc9f7a',
-        link: 'https://open.spotify.com/intl-fr/artist/0MKCwZqyfnbu8i83V8ntiW',
-        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/2s9Jk0d8WipDSlQ38qUcCN?utm_source=generator',
-        slug: 'got-hooked-on-poems',
+        coverColor: '#e4a578',
+        link: '',
+        spotifyEmbeedLink: '',
+        slug: '',
+        isEnabled: false,
     },
 ]
