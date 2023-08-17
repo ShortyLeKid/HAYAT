@@ -6,6 +6,7 @@ const Player = () => {
 
     const { slug } = useParams();
     const found = albumDatas.find((element) => element.slug === slug);
+    document.body.style.backgroundColor = '#f0f0f0';
 
     return (
         <div className="player-container">
@@ -17,7 +18,12 @@ const Player = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
             />
-            <NavLink to={"/"}>Go back</NavLink>
+            <NavLink
+                className='button'
+                to={"/"}
+            >
+                Go back
+            </NavLink>
         </div>
     );
 };

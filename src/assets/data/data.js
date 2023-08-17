@@ -10,7 +10,7 @@ export default [
         cover: HYT001cover,
         coverColor: '#b091bb',
         link: 'https://open.spotify.com/intl-fr/album/5v46620AOqMMz4bBc4bxSW',
-        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/5v46620AOqMMz4bBc4bxSW?utm_source=generator',
+        spotifyEmbeedLink: 'https://open.spotify.com/embed/album/5v46620AOqMMz4bBc4bxSW?utm_source=generator&theme=0',
         slug: 'she-was-shattered',
     },
     {
