@@ -6,31 +6,31 @@ import './albumlist.scss';
 const AlbumList = () => {
 
     return (
-        <div className="album-list">
-            {albumDatas.map(({
-                artist,
-                title,
-                cover,
-                coverColor,
-                link,
-                spotifyEmbeedLink,
-                slug,
-                id,
-                isEnabled
-            }) => (
-                <AlbumCard
-                    artist={artist}
-                    title={title}
-                    cover={cover}
-                    coverColor={coverColor}
-                    link={link}
-                    // spotifyEmbeedLink={spotifyEmbeedLink}
-                    key={id}
-                    slug={slug}
-                    isEnabled={isEnabled}
-                />
-            ))}
-        </div>
+
+            <div className='album-list'>
+                {albumDatas.map(({
+                    artist,
+                    title,
+                    cover,
+                    coverColor,
+                    link,
+                    slug,
+                    id,
+                    isEnabled
+                }) => (
+                    <AlbumCard
+                        artist={artist}
+                        title={title}
+                        cover={cover}
+                        coverColor={coverColor}
+                        link={link}
+                        key={id}
+                        slug={slug}
+                        isEnabled={isEnabled}
+                    />
+                ))}
+            </div>
+        // </div>
     );
 };
 

@@ -1,14 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import './albumcard.scss';
-import { useState } from 'react';
 
 const AlbumCard = ({
     title,
     artist,
     cover,
     coverColor,
-    link,
-    spotifyEmbeedLink,
     slug,
     isEnabled
 }) => {
