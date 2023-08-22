@@ -4,16 +4,15 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import './app.scss';
-import { inject } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 
 
 const App = () => {
 
-    // Vercel's analytics
-    inject();
 
     return (
         <div id="app">
+            <Analytics />
             <Header />
             <Routes>
                 <Route path="/" element={<AlbumList />} />
