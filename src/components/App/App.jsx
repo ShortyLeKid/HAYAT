@@ -1,4 +1,4 @@
-import AlbumList from "../../views/AlbumList/AlbumList";
+import Home from "../../views/Home/Home";
 import Player from "../../views/Player/Player";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -15,7 +15,7 @@ const App = () => {
             <Analytics />
             <Header />
             <Routes>
-                <Route path="/" element={<AlbumList />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/player/:slug" element={<Player />} />
             </Routes>
             <Footer />
